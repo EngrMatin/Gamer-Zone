@@ -1,0 +1,805 @@
+/* work sans font from google fonts */  /* import as many font size as required */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Mobile-first CSS */
+/* shared styles */
+* 
+{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body 
+{
+    max-width: 100%;      /* 1920px */
+    margin: auto;
+    background: #FFF;
+}
+
+.text-gray 
+{
+    color: #534C64;
+}
+
+.btn-primary 
+{
+    border: 0;
+    border-radius: 6vw;      /* 48px */
+    background: #FF42AF;
+    color: #FFF;
+    font-size: 2.5vw;        /* 20px */
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.5vw 3vw;      /* 12px 24px */
+    cursor: pointer;
+}
+
+/* header-nav section */
+
+nav 
+{
+    max-width: 100%;        /* 1920px */ 
+    padding: 4.75vw 5vw;    /* 38px 40px */  
+    background: #FFF;
+    box-shadow: 0 0.5vw 3.75vw 0 rgba(0, 0, 0, 0.05);   /* 0px 4px 30px 0px */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.web-title
+{
+    display: flex;
+    align-items: center;
+}
+
+.web-title img
+{
+    width: 10.75vw;     /* 86px */
+    height: 5vw;        /* 40px */
+}
+
+.web-title-text 
+{
+    font-size: 5.6vw;      /* 45px */ 
+    font-weight: 700;
+    color: #0B0223;
+    margin: 0 0 0 2.5vw;    /* 0 0 0 20px */
+}
+
+#title-g
+{
+    color: #FF42A5;
+}
+
+nav>ul 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;       /* 32px  */
+}
+
+nav li 
+{
+    list-style: none;
+    font-size: 2.25vw;     /* 18px */
+    font-weight: 500;
+}
+
+nav li a 
+{
+    text-decoration: none;
+    color: #534C64;
+}
+
+.follow-us
+{
+    width: 32.75vw;           /* 262px */
+    height: 7vw;              /* 56px */  
+    border-radius: 1vw;       /* 8px */
+    background: rgba(11, 2, 35, 0.10);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.follow-us-text
+{
+    color: #3C354F;
+    text-align: center;
+    font-size: 2.25vw;      /* 18px */
+    font-weight: 500;
+}
+
+.youtube-icon
+{
+    width: 4.25vw;        /* 34px */
+    height: 3vw;          /* 24px */
+}
+
+.tiktok-icon
+{
+    width: 3.1vw;        /* 25px */
+    height: 3vw;         /* 24px */
+}
+
+.youtube-icon img,
+.tiktok-icon img
+{
+    width:100%;
+} 
+
+
+/* banner section */
+
+.banner
+{
+    display: flex;
+    flex-direction: column;
+    /* gap: 8.5vw; */      /* 68px */
+}
+
+.banner-image
+{
+    text-align: center;
+}
+
+.banner-image>img
+{
+    width: 80%;
+}
+
+.banner-content-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/Group14.png"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 70vw;        /* 500px */
+}
+
+.banner-content h2
+{
+    text-align: left;
+    margin:0;
+    font-size: 4vw;         /* 32px */ 
+    font-weight: 600;
+    color: #0B0223;
+    text-transform: uppercase;
+}
+
+.banner-content h1
+{
+    text-align: left;
+    margin:0;
+    font-size: 8vw;        /* 64px */
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-description
+{
+    display: flex;
+    align-items: center;
+}
+
+.banner-icon 
+{
+    width: 3vw;        /* 24px */
+    height: 3vw;       /* 24px */
+}
+
+.banner-icon img
+{
+    width: 100%;
+}
+
+.banner-text
+{
+    color: #534C64;
+    text-align: left;
+    font-size: 2.5vw;       /* 20px */
+    font-weight: 500;
+    margin-left: 1.5vw;     /* 12px */
+}
+
+#btn-skyblue
+{
+    background: #4EC5F7;
+    margin: 5vw 0 0 3vw;     /* 40px 0 0 24px */
+}
+
+
+/* funny-videos-section */
+
+.funny-videos-section
+{
+    margin-top: 15vw;       /* 120px */
+}
+
+.section-title
+{
+    color: #0B0223;
+    text-align: center;
+    font-size: 4.5vw;          /* 32px */
+    font-weight: 700;
+    margin-bottom: 2vw;       /* 16px */
+}
+
+#spanned-title
+{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-description
+{
+    color: #534C64;
+    text-align: center;
+    font-size: 1.7vw;       /* 14px */
+    font-weight: 400;
+    line-height: 3.75vw;       /* 30px */
+}
+
+.funny-videos-content
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;             /* 24px */
+    margin-top: 6vw;       /* 48px */
+}
+
+.caption-text
+{
+    width: 55vw;          /* 342px */     
+    text-align: center;
+    color: #534C64;
+    font-size: 1.7vw;       /* 14px */
+    font-weight: 500;
+}
+
+.funny-content img:hover
+{
+    filter: brightness(50%);
+} 
+
+.funny-content 
+{
+    position: relative; 
+    overflow: hidden;
+}
+
+.watch-now-text 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%); 
+    opacity: 0; 
+    font-size: 2vw;             /* 16px */ 
+    font-weight: 600; 
+    color: #FF42A5; 
+}
+
+.funny-content:hover .watch-now-text 
+{
+    opacity: 1;
+}
+
+.funny-content img 
+{
+    width: 100%;
+    height: auto;
+}
+
+.image-container 
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.play-button-overlay 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.image-container:hover .play-button-overlay 
+{
+    opacity: 1;
+}
+
+.play-button-overlay img 
+{
+    width: 6vw;             /* 48px */
+    height: 6vw;             /* 48px */
+}
+
+
+/* play-instantly-section */
+
+.play-instantly-section
+{
+    display: flex;
+    flex-direction: column;
+    gap: 6.25vw;             /* 50px */
+    margin-top: 10vw;        /* 80px */
+    padding: 0 6.25vw;       /* 0 50px */
+}
+
+.play-instantly-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-instantly-content 
+{
+    width: 42.63vw;          /* 341px */
+} 
+
+.play-instantly-big-image img
+{
+    width: 80%;
+    margin-left: 16vw;        /* 128px */
+}
+
+.play-instantly-small-image img
+{
+    width:40%;
+    position: relative;
+    bottom: 32vw;        /* 256px */ 
+}
+
+
+/* game-card-section */
+
+.game-card-section
+{
+    margin: 0 5vw 15vw 5vw;  /* 0px 40px 80px 40px */
+    height: 22vw;            /* 280px */
+    overflow: hidden;
+}
+
+.game-card-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2.5vw;             /* 20px */
+    flex-wrap: wrap;
+}
+
+.game-card
+{
+    display: flex;
+    align-items: center;
+    gap: 1.25vw;             /* 10px */ 
+}
+
+.game-icon
+{
+    width: 7.5vw;             /* 60px */
+    height: 7.5vw;            /* 60px */
+    border-radius: 6.25vw;    /* 50px */
+}
+
+.game-icon img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.game-card h5
+{
+    color: #0B0223;
+    font-size: 2vw;         /* 16px */
+    font-weight: 500;
+}
+
+.game-card h5:hover
+{
+    color: #FF42A5;
+}
+
+.game-card:hover
+{
+    border: 2px solid #FF42A5;
+    padding: 0.5vw 1.25vw;           /* 4px 10px */
+    border-radius: 5vw;       /* 50px */
+    color: #FF42A5;
+    background-color: #FFF;
+}
+
+
+/* footer-section */
+
+.footer-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8.25vw;              /* 66px */
+    padding: 15vw 6vw;       /* 80px 40px */
+    background: #0B0223;
+}
+
+footer .web-title-text,
+.footer-nav
+{
+    color: #FFF;
+}
+
+.footer-nav ul
+{
+    display: flex;
+    gap: 7.5vw;         /* 60px */
+    flex-wrap: wrap;
+    width: 50vw;
+}
+
+ul>li
+{
+    list-style: none;
+    font-size: 2.25vw;         /* 18px */
+}
+
+.footer-icon
+{
+    width: 5vw;       /* 41px */
+    height: 5vw;      /* 41px */
+}
+
+.footer-icon img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.icon-container
+{
+    display: flex;
+    align-items: center;
+    gap: 6vw;               /* 40px */
+    flex-wrap: wrap;
+    width: 30vw;         /* 250px */
+}
+
+#footer-nav-2, footer p
+{
+    font-size: 2vw;         /* 16px */
+    color: rgba(255, 255, 255, 0.60);
+}
+
+footer p
+{
+    margin-top: -5vw;         /* -40px */
+    width: 30vw;             /* 240px */
+    text-align: center;
+    /* text-indent: 5vw; */    /* 40px */
+}
+
+
+
+/* media query for screens larger than 576px */
+
+@media screen and (min-width: 577px) 
+{
+    .web-title img 
+    {
+        width: 4.3vw;     /* 86px */
+        height: 2vw;      /* 40px */
+    }
+
+    .web-title-text 
+    {
+        font-size: 2.25vw;      /* 45px */   
+        margin: 0 0 0 1vw;      /* 0 0 0 20px */  
+    }
+    
+    nav 
+    {
+        flex-direction: row; 
+        justify-content: space-between;
+        padding: 1.9vw 12vw;    /* 38px 240px */ 
+    }
+
+    nav>ul
+    {
+        flex-direction: row;
+        gap: 1.6vw;     /* 32px */
+    }
+
+    nav li 
+    {
+        font-size: 1.25vw;
+    }
+
+    .follow-us
+    {
+        width: 15vw;
+        height: 3vw;
+        border-radius: 0.5vw;
+    }
+
+    .follow-us-text
+    {
+        font-size: 1.25vw;
+    }
+
+    .youtube-icon
+    {
+        width: 1.7vw;
+        height: 1.2vw;
+    }
+
+    .tiktok-icon
+    {
+        width: 1.25vw;
+        height: 1.2vw;
+    }
+
+
+    /* banner section */
+
+    .banner 
+    {
+        flex-direction: row-reverse;
+        gap: 5.4vw; 
+        padding-right: 12vw; 
+    }
+
+    .banner-image 
+    {
+        width: 37vw; 
+        /* height: 31vw;  */
+    }
+
+    .banner-image>img 
+    {
+        width: 100%;
+    }
+
+    .banner-content-container 
+    {
+        width: 45vw; 
+        height: 35vw; 
+    }
+
+    .banner-content h2 
+    {
+        font-size: 2.4vw; 
+    }
+
+    .banner-content h1 
+    {
+        font-size: 4.8vw; 
+    }
+
+    .banner-icon 
+    {
+        width: 1.2vw; 
+        height: 1.2vw; 
+    }
+
+    .banner-text 
+    {
+        font-size: 1vw; 
+    }
+
+    .btn-primary 
+    {
+        padding: 1vw 2vw; 
+        font-size: 1.25vw;
+    }
+
+    #btn-skyblue
+    {
+        margin: 2vw 0 0 1.2vw;     /* 40px 0 0 24px */
+    }
+
+
+    /* funny-videos-section */
+
+    .funny-videos-section
+    {
+        margin-top: 8vw;       /* 120px */
+        padding: 0 12vw;
+    }
+
+    .section-title
+    {
+        font-size: 2.4vw;      /* 48px */
+    }
+
+    .section-description
+    {
+        color: #534C64;
+        text-align: center;
+        font-size: 0.9vw;      /* 18px */
+        font-weight: 400;
+        line-height: 1.5vw;      /* 30px */
+    }
+
+    .funny-videos-content
+    {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2vw;             /* 24px */
+        margin-top: 2.8vw;       /* 48px */
+    }
+
+    .caption-text
+    {
+        width: 17vw;          /* 342px */ 
+        height: 3vw;          /* 60px */
+        font-size: 1vw;      /* 20px */
+        text-align: left;
+    }
+
+    .watch-now-text 
+    {
+        top: 45%;
+        font-size: 1.2vw;             /* 16px */ 
+    }
+    
+    .funny-content img 
+    {
+        width: 100%;
+        height: auto;
+    }
+    
+    .play-button-overlay 
+    {
+        top: 45%;
+    }
+    
+    .play-button-overlay img 
+    {
+        width: 3vw;             /* 48px */
+        height: 3vw;             /* 48px */
+    }
+
+
+    /* play-instantly-section */
+
+    .play-instantly-section
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 6vw;              /* 120px */
+        margin-top: 6vw;       /* 120px */
+        padding: 0 12vw;       /* 240px */
+        height: 36.3vw;        /* 726px */
+    }
+
+    .play-instantly-container
+    {
+        padding-left: 10vw;     /* 200px */
+    }
+
+    .play-instantly-content 
+    {
+        width: 18.5vw;          /* 370px */ 
+    } 
+
+    .play-instantly-content h2, 
+    .play-instantly-content p
+    {
+        text-align: right;
+    }
+
+    .play-instantly-big-image img
+    {
+        margin-left: 7vw;       /* 140px */
+    }
+
+    .play-instantly-small-image img
+    {
+        bottom: 14vw;          /* 280px */
+    }
+
+
+    /* game-card-section */
+
+    .game-card-section
+    {
+        margin: 10vw 12vw;    /* 120px 240px */
+        height: 12vw;         /*   280px */
+    }
+
+    .game-card-container
+    {
+        justify-content:space-evenly;
+        gap: 2.35vw;          /* 47px */
+    }
+
+    .game-card
+    {
+        gap: 0.8vw;          /* 16px */
+    }
+
+    .game-card h5
+    {
+        font-size: 1vw;          /* 20px */
+    }
+
+    .game-card-container
+    {
+        gap: 1vw;             /* 20px */
+    }
+    
+    
+    .game-icon
+    {
+        width: 4vw;             /* 60px */
+        height: 4vw;            /* 60px */
+        border-radius: 2.5vw;    /* 50px */
+    }
+    
+
+    /* footer-section */
+
+    .footer-section
+    {
+        padding: 6vw 12vw;     /* 120px 240px */  
+        gap: 4vw;              /* 66px */ 
+    }
+
+    .footer-nav ul, 
+    .icon-container, footer p
+    {
+        width: max-content;
+    }
+
+
+    .footer-nav ul
+    {
+        gap: 3vw;         /* 60px */
+    }
+
+    ul>li
+    {
+        font-size: 1vw;         /* 18px */
+    }
+
+    .footer-icon
+    {
+        width: 2.2vw;       /* 41px */
+        height: 2.2vw;      /* 41px */
+    }
+
+    .icon-container
+    {
+        gap: 3vw;               /* 40px */
+    }
+
+    #footer-nav-2, footer p
+    {
+        font-size: 1vw;         /* 16px */
+    }
+
+    footer p
+    {
+        margin-top: -2vw;         /* -40px */
+    }
+
+}
